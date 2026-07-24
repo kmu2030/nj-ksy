@@ -1,0 +1,5 @@
+id: uint_single
+data: uint_single.bin
+asserts:
+  - actual: v.v
+    expected: 1

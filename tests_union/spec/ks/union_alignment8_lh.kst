@@ -1,0 +1,13 @@
+id: union_alignment8_lh
+data: UNION_ALIGNMENT8_LH.bin
+asserts:
+  - actual: v.words.v[0]
+    expected: 1
+  - actual: v.words.v[1]
+    expected: 0
+  - actual: v.words.v[2]
+    expected: 0
+  - actual: v.words.v[3]
+    expected: 0
+  - actual: v.a_lword.v
+    expected: 1

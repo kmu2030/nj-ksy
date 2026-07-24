@@ -1,0 +1,57 @@
+id: int_arr_d3_lh
+data: INT_ARR_D3_LH.bin
+asserts:
+  - actual: v.v[0].v[0].v[0]
+    expected: 0
+  - actual: v.v[0].v[0].v[1]
+    expected: -1
+  - actual: v.v[0].v[0].v[2]
+    expected: 2
+  - actual: v.v[0].v[1].v[0]
+    expected: -3
+  - actual: v.v[0].v[1].v[1]
+    expected: 4
+  - actual: v.v[0].v[1].v[2]
+    expected: -5
+  - actual: v.v[0].v[2].v[0]
+    expected: 6
+  - actual: v.v[0].v[2].v[1]
+    expected: -7
+  - actual: v.v[0].v[2].v[2]
+    expected: 8
+  - actual: v.v[1].v[0].v[0]
+    expected: -9
+  - actual: v.v[1].v[0].v[1]
+    expected: 10
+  - actual: v.v[1].v[0].v[2]
+    expected: -11
+  - actual: v.v[1].v[1].v[0]
+    expected: 12
+  - actual: v.v[1].v[1].v[1]
+    expected: -13
+  - actual: v.v[1].v[1].v[2]
+    expected: 14
+  - actual: v.v[1].v[2].v[0]
+    expected: -15
+  - actual: v.v[1].v[2].v[1]
+    expected: 16
+  - actual: v.v[1].v[2].v[2]
+    expected: -17
+  - actual: v.v[2].v[0].v[0]
+    expected: 18
+  - actual: v.v[2].v[0].v[1]
+    expected: -19
+  - actual: v.v[2].v[0].v[2]
+    expected: 20
+  - actual: v.v[2].v[1].v[0]
+    expected: -21
+  - actual: v.v[2].v[1].v[1]
+    expected: 22
+  - actual: v.v[2].v[1].v[2]
+    expected: -23
+  - actual: v.v[2].v[2].v[0]
+    expected: 24
+  - actual: v.v[2].v[2].v[1]
+    expected: -25
+  - actual: v.v[2].v[2].v[2]
+    expected: 26

@@ -1,0 +1,21 @@
+id: dint_arr_d2_lh
+data: DINT_ARR_D2_LH.bin
+asserts:
+  - actual: v.v[0].v[0]
+    expected: 0
+  - actual: v.v[0].v[1]
+    expected: -1
+  - actual: v.v[0].v[2]
+    expected: 2
+  - actual: v.v[1].v[0]
+    expected: -3
+  - actual: v.v[1].v[1]
+    expected: 4
+  - actual: v.v[1].v[2]
+    expected: -5
+  - actual: v.v[2].v[0]
+    expected: 6
+  - actual: v.v[2].v[1]
+    expected: -7
+  - actual: v.v[2].v[2]
+    expected: 8

@@ -1,0 +1,111 @@
+id: struct_small_arr_d3_lh
+data: STRUCT_SMALL_ARR_D3_LH.bin
+asserts:
+  - actual: v.v[0].v[0].v[0].s.v
+    expected: '"a"'
+  - actual: v.v[0].v[0].v[0].u.v
+    expected: 1
+  - actual: v.v[0].v[0].v[1].s.v
+    expected: '"b"'
+  - actual: v.v[0].v[0].v[1].u.v
+    expected: 2
+  - actual: v.v[0].v[0].v[2].s.v
+    expected: '"c"'
+  - actual: v.v[0].v[0].v[2].u.v
+    expected: 3
+  - actual: v.v[0].v[1].v[0].s.v
+    expected: '"d"'
+  - actual: v.v[0].v[1].v[0].u.v
+    expected: 4
+  - actual: v.v[0].v[1].v[1].s.v
+    expected: '"e"'
+  - actual: v.v[0].v[1].v[1].u.v
+    expected: 5
+  - actual: v.v[0].v[1].v[2].s.v
+    expected: '"f"'
+  - actual: v.v[0].v[1].v[2].u.v
+    expected: 6
+  - actual: v.v[0].v[2].v[0].s.v
+    expected: '"g"'
+  - actual: v.v[0].v[2].v[0].u.v
+    expected: 7
+  - actual: v.v[0].v[2].v[1].s.v
+    expected: '"h"'
+  - actual: v.v[0].v[2].v[1].u.v
+    expected: 8
+  - actual: v.v[0].v[2].v[2].s.v
+    expected: '"i"'
+  - actual: v.v[0].v[2].v[2].u.v
+    expected: 9
+  - actual: v.v[1].v[0].v[0].s.v
+    expected: '"j"'
+  - actual: v.v[1].v[0].v[0].u.v
+    expected: 10
+  - actual: v.v[1].v[0].v[1].s.v
+    expected: '"k"'
+  - actual: v.v[1].v[0].v[1].u.v
+    expected: 11
+  - actual: v.v[1].v[0].v[2].s.v
+    expected: '"l"'
+  - actual: v.v[1].v[0].v[2].u.v
+    expected: 12
+  - actual: v.v[1].v[1].v[0].s.v
+    expected: '"m"'
+  - actual: v.v[1].v[1].v[0].u.v
+    expected: 13
+  - actual: v.v[1].v[1].v[1].s.v
+    expected: '"n"'
+  - actual: v.v[1].v[1].v[1].u.v
+    expected: 14
+  - actual: v.v[1].v[1].v[2].s.v
+    expected: '"o"'
+  - actual: v.v[1].v[1].v[2].u.v
+    expected: 15
+  - actual: v.v[1].v[2].v[0].s.v
+    expected: '"p"'
+  - actual: v.v[1].v[2].v[0].u.v
+    expected: 16
+  - actual: v.v[1].v[2].v[1].s.v
+    expected: '"q"'
+  - actual: v.v[1].v[2].v[1].u.v
+    expected: 17
+  - actual: v.v[1].v[2].v[2].s.v
+    expected: '"r"'
+  - actual: v.v[1].v[2].v[2].u.v
+    expected: 18
+  - actual: v.v[2].v[0].v[0].s.v
+    expected: '"s"'
+  - actual: v.v[2].v[0].v[0].u.v
+    expected: 19
+  - actual: v.v[2].v[0].v[1].s.v
+    expected: '"t"'
+  - actual: v.v[2].v[0].v[1].u.v
+    expected: 20
+  - actual: v.v[2].v[0].v[2].s.v
+    expected: '"u"'
+  - actual: v.v[2].v[0].v[2].u.v
+    expected: 21
+  - actual: v.v[2].v[1].v[0].s.v
+    expected: '"v"'
+  - actual: v.v[2].v[1].v[0].u.v
+    expected: 22
+  - actual: v.v[2].v[1].v[1].s.v
+    expected: '"w"'
+  - actual: v.v[2].v[1].v[1].u.v
+    expected: 23
+  - actual: v.v[2].v[1].v[2].s.v
+    expected: '"x"'
+  - actual: v.v[2].v[1].v[2].u.v
+    expected: 24
+  - actual: v.v[2].v[2].v[0].s.v
+    expected: '"y"'
+  - actual: v.v[2].v[2].v[0].u.v
+    expected: 25
+  - actual: v.v[2].v[2].v[1].s.v
+    expected: '"z"'
+  - actual: v.v[2].v[2].v[1].u.v
+    expected: 26
+  - actual: v.v[2].v[2].v[2].s.v
+    expected: '"0"'
+  - actual: v.v[2].v[2].v[2].u.v
+    expected: 27

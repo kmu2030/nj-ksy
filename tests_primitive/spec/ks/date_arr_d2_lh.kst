@@ -1,0 +1,21 @@
+id: date_arr_d2_lh
+data: DATE_ARR_D2_LH.bin
+asserts:
+  - actual: v.v[0].v[0]
+    expected: 0
+  - actual: v.v[0].v[1]
+    expected: 777600000000000
+  - actual: v.v[0].v[2]
+    expected: 2678400000000000
+  - actual: v.v[1].v[0]
+    expected: 23587200000000000
+  - actual: v.v[1].v[1]
+    expected: 31536000000000000
+  - actual: v.v[1].v[2]
+    expected: 315532800000000000
+  - actual: v.v[2].v[0]
+    expected: 3155760000000000000
+  - actual: v.v[2].v[1]
+    expected: 2592000000000000
+  - actual: v.v[2].v[2]
+    expected: 28857600000000000

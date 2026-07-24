@@ -1,0 +1,53 @@
+id: union_struct_arr_d3_e1_lh
+data: STRUCT_UNION_ARR_D3_E1_LH.bin
+asserts:
+  - actual: v.v[0].v[0].v[0].alignment1_unions.v[0].bytes.v[0]
+    expected: 1
+  - actual: v.v[0].v[0].v[0].alignment1_unions.v[0].bytes.v[1]
+    expected: 2
+  - actual: v.v[0].v[0].v[0].alignment1_unions.v[0].bytes.v[2]
+    expected: 3
+  - actual: v.v[0].v[0].v[0].alignment1_unions.v[0].bytes.v[3]
+    expected: 4
+  - actual: v.v[0].v[0].v[0].alignment1_unions.v[1].bytes.v[0]
+    expected: 5
+  - actual: v.v[0].v[0].v[0].alignment1_unions.v[1].bytes.v[1]
+    expected: 6
+  - actual: v.v[0].v[0].v[0].alignment1_unions.v[1].bytes.v[2]
+    expected: 7
+  - actual: v.v[0].v[0].v[0].alignment1_unions.v[1].bytes.v[3]
+    expected: 8
+  - actual: v.v[0].v[0].v[0].alignment2_unions.v[0].a_bool.v
+    expected: true
+  - actual: v.v[0].v[0].v[0].alignment2_unions.v[0].words.v[0]
+    expected: 9
+  - actual: v.v[0].v[0].v[0].alignment2_unions.v[0].words.v[1]
+    expected: 10
+  - actual: v.v[0].v[0].v[0].alignment2_unions.v[1].a_bool.v
+    expected: true
+  - actual: v.v[0].v[0].v[0].alignment2_unions.v[1].words.v[0]
+    expected: 11
+  - actual: v.v[0].v[0].v[0].alignment2_unions.v[1].words.v[1]
+    expected: 12
+  - actual: v.v[0].v[0].v[0].a_alignment4_union.bytes.v[0]
+    expected: 13
+  - actual: v.v[0].v[0].v[0].a_alignment4_union.bytes.v[1]
+    expected: 0
+  - actual: v.v[0].v[0].v[0].a_alignment4_union.bytes.v[2]
+    expected: 0
+  - actual: v.v[0].v[0].v[0].a_alignment4_union.bytes.v[3]
+    expected: 0
+  - actual: v.v[0].v[0].v[0].a_alignment4_union.dwords.v[0]
+    expected: 13
+  - actual: v.v[0].v[0].v[0].a_alignment4_union.dwords.v[1]
+    expected: 14
+  - actual: v.v[0].v[0].v[0].a_alignment8_union.words.v[0]
+    expected: 15
+  - actual: v.v[0].v[0].v[0].a_alignment8_union.words.v[1]
+    expected: 0
+  - actual: v.v[0].v[0].v[0].a_alignment8_union.words.v[2]
+    expected: 0
+  - actual: v.v[0].v[0].v[0].a_alignment8_union.words.v[3]
+    expected: 0
+  - actual: v.v[0].v[0].v[0].a_alignment8_union.a_lword.v
+    expected: 15

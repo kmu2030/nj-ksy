@@ -1,0 +1,25 @@
+id: struct_alignment8
+data: STRUCT_ALIGNMENT8.bin
+asserts:
+  - actual: v.a_ulint.v
+    expected: 1
+  - actual: v.a_lint.v
+    expected: -2
+  - actual: v.udints.v[0]
+    expected: 3
+  - actual: v.udints.v[1]
+    expected: 4
+  - actual: v.a_alignment2_struct.a_bool.v
+    expected: true
+  - actual: v.a_alignment2_struct.a_int.v
+    expected: -1
+  - actual: v.a_alignment2_struct.a_uint.v
+    expected: 2
+  - actual: v.a_alignment2_struct.bools.v[0]
+    expected: true
+  - actual: v.a_alignment2_struct.bools.v[1]
+    expected: false
+  - actual: v.a_alignment2_struct.bools.v[2]
+    expected: false
+  - actual: v.a_alignment2_struct.bools.v[3]
+    expected: true

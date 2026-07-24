@@ -1,0 +1,7 @@
+id: struct_small_arr_d3_e1_lh
+data: STRUCT_SMALL_ARR_D3_E1_LH.bin
+asserts:
+  - actual: v.v[0].v[0].v[0].s.v
+    expected: '"a"'
+  - actual: v.v[0].v[0].v[0].u.v
+    expected: 1

@@ -1,0 +1,21 @@
+id: bool_arr_d1_lh_flat
+data: BOOL_ARR_D1_LH.bin
+asserts:
+  - actual: instance.v[0]
+    expected: true
+  - actual: instance.v[1]
+    expected: false
+  - actual: instance.v[2]
+    expected: true
+  - actual: instance.block_info.pos_block
+    expected: 0
+  - actual: instance.block_info.len_block
+    expected: 2
+  - actual: instance.block_info.pos_data
+    expected: 0
+  - actual: instance.block_info.ks_type
+    expected: '"b1"'
+  - actual: instance.block_info.num_repeat
+    expected: 3
+  - actual: instance.block_info.len_data
+    expected: 2

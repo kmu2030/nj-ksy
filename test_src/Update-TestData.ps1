@@ -1,0 +1,2 @@
+Copy-Item -Path "C:\OMRON\Data\SimulatorData\CARD\Memory001\testvars.ps1" -Destination "$PSScriptRoot" -Force
+Copy-Item -Path "C:\OMRON\Data\SimulatorData\CARD\Memory001\testvars\*" -Destination "$PSScriptRoot" -Force -Recurse

@@ -1,0 +1,27 @@
+id: union_alignment1_arr_d1_lh
+data: UNION_ALIGNMENT1_ARR_D1_LH.bin
+asserts:
+  - actual: v.v[0].bytes.v[0]
+    expected: 0
+  - actual: v.v[0].bytes.v[1]
+    expected: 1
+  - actual: v.v[0].bytes.v[2]
+    expected: 2
+  - actual: v.v[0].bytes.v[3]
+    expected: 3
+  - actual: v.v[1].bytes.v[0]
+    expected: 5
+  - actual: v.v[1].bytes.v[1]
+    expected: 6
+  - actual: v.v[1].bytes.v[2]
+    expected: 7
+  - actual: v.v[1].bytes.v[3]
+    expected: 8
+  - actual: v.v[2].bytes.v[0]
+    expected: 9
+  - actual: v.v[2].bytes.v[1]
+    expected: 10
+  - actual: v.v[2].bytes.v[2]
+    expected: 11
+  - actual: v.v[2].bytes.v[3]
+    expected: 12

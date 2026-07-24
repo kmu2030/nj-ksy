@@ -1,0 +1,15 @@
+id: union_alignment4_lh
+data: UNION_ALIGNMENT4_LH.bin
+asserts:
+  - actual: v.bytes.v[0]
+    expected: 1
+  - actual: v.bytes.v[1]
+    expected: 0
+  - actual: v.bytes.v[2]
+    expected: 0
+  - actual: v.bytes.v[3]
+    expected: 0
+  - actual: v.dwords.v[0]
+    expected: 1
+  - actual: v.dwords.v[1]
+    expected: 2

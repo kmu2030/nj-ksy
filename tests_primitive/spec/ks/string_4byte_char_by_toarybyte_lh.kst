@@ -1,0 +1,9 @@
+id: string_4byte_char_by_toarybyte_lh
+data: STRING_4BYTE_CHAR_BY_TOARYBYTE_LH.bin
+asserts:
+  # Since 4-byte Unicode appears to be problematic for test code generation,
+  # I will compare the data as byte sequences.
+  # - actual: v.v
+  #   expected: '"💯"'
+  - actual: raw
+    expected: '[0xf0, 0x9f, 0x92, 0xaf]'

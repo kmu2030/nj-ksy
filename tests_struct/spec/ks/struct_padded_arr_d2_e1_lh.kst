@@ -1,0 +1,15 @@
+id: struct_padded_arr_d2_e1_lh
+data: STRUCT_PADDED_ARR_D2_E1_LH.bin
+asserts:
+  - actual: v.v[0].v[0].a_usint.v
+    expected: 1
+  - actual: v.v[0].v[0].a_uint.v
+    expected: 2
+  - actual: v.v[0].v[0].a_sint.v
+    expected: -3
+  - actual: v.v[0].v[0].a_dint.v
+    expected: -4
+  - actual: v.v[0].v[0].a_ulint.v
+    expected: 5
+  - actual: v.v[0].v[0].a_bool.v
+    expected: true

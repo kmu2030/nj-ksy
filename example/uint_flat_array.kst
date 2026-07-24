@@ -1,0 +1,83 @@
+id: uint_flat_array
+data: uint_array.bin
+asserts:
+  - actual: array_1d.v[0]
+    expected: 0
+  - actual: array_1d.v[1]
+    expected: 1
+  - actual: array_1d.v[2]
+    expected: 2
+
+  - actual: array_2d.v[0]
+    expected: 0
+  - actual: array_2d.v[1]
+    expected: 1
+  - actual: array_2d.v[2]
+    expected: 2
+  - actual: array_2d.v[3]
+    expected: 3
+  - actual: array_2d.v[4]
+    expected: 4
+  - actual: array_2d.v[5]
+    expected: 5
+  - actual: array_2d.v[6]
+    expected: 6
+  - actual: array_2d.v[7]
+    expected: 7
+  - actual: array_2d.v[8]
+    expected: 8
+
+  - actual: array_3d.v[0]
+    expected: 0
+  - actual: array_3d.v[1]
+    expected: 1
+  - actual: array_3d.v[2]
+    expected: 2
+  - actual: array_3d.v[3]
+    expected: 3
+  - actual: array_3d.v[4]
+    expected: 4
+  - actual: array_3d.v[5]
+    expected: 5
+  - actual: array_3d.v[6]
+    expected: 6
+  - actual: array_3d.v[7]
+    expected: 7
+  - actual: array_3d.v[8]
+    expected: 8
+  - actual: array_3d.v[9]
+    expected: 9
+  - actual: array_3d.v[10]
+    expected: 10
+  - actual: array_3d.v[11]
+    expected: 11
+  - actual: array_3d.v[12]
+    expected: 12
+  - actual: array_3d.v[13]
+    expected: 13
+  - actual: array_3d.v[14]
+    expected: 14
+  - actual: array_3d.v[15]
+    expected: 15
+  - actual: array_3d.v[16]
+    expected: 16
+  - actual: array_3d.v[17]
+    expected: 17
+  - actual: array_3d.v[18]
+    expected: 18
+  - actual: array_3d.v[19]
+    expected: 19
+  - actual: array_3d.v[20]
+    expected: 20
+  - actual: array_3d.v[21]
+    expected: 21
+  - actual: array_3d.v[22]
+    expected: 22
+  - actual: array_3d.v[23]
+    expected: 23
+  - actual: array_3d.v[24]
+    expected: 24
+  - actual: array_3d.v[25]
+    expected: 25
+  - actual: array_3d.v[26]
+    expected: 26

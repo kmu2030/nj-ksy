@@ -1,0 +1,9 @@
+id: date_arr_d1_lh
+data: DATE_ARR_D1_LH.bin
+asserts:
+  - actual: v.v[0]
+    expected: 0
+  - actual: v.v[1]
+    expected: 86400000000000
+  - actual: v.v[2]
+    expected: 1780531200000000000

@@ -1,0 +1,5 @@
+id: lint_arr_d3_e1_lh
+data: LINT_ARR_D3_E1_LH.bin
+asserts:
+  - actual: v.v[0].v[0].v[0]
+    expected: -1

@@ -1,0 +1,5 @@
+LOCAL_KST_PATH=tests
+LOCAL_KST_FORMATS_PATH=tests/formats
+LOCAL_KST_SPEC_PATH=tests/spec
+LOCAL_KST_SRC_PATH=tests/src
+LOCAL_KST_CONFIG_PATH=tests/config

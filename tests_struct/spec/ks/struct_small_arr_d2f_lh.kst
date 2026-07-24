@@ -1,0 +1,39 @@
+id: struct_small_arr_d2f_lh
+data: STRUCT_SMALL_ARR_D2_LH.bin
+asserts:
+  - actual: v.v[0].s.v
+    expected: '"a"'
+  - actual: v.v[0].u.v
+    expected: 1
+  - actual: v.v[1].s.v
+    expected: '"b"'
+  - actual: v.v[1].u.v
+    expected: 2
+  - actual: v.v[2].s.v
+    expected: '"c"'
+  - actual: v.v[2].u.v
+    expected: 3
+  - actual: v.v[3].s.v
+    expected: '"d"'
+  - actual: v.v[3].u.v
+    expected: 4
+  - actual: v.v[4].s.v
+    expected: '"e"'
+  - actual: v.v[4].u.v
+    expected: 5
+  - actual: v.v[5].s.v
+    expected: '"f"'
+  - actual: v.v[5].u.v
+    expected: 6
+  - actual: v.v[6].s.v
+    expected: '"g"'
+  - actual: v.v[6].u.v
+    expected: 7
+  - actual: v.v[7].s.v
+    expected: '"h"'
+  - actual: v.v[7].u.v
+    expected: 8
+  - actual: v.v[8].s.v
+    expected: '"i"'
+  - actual: v.v[8].u.v
+    expected: 9

@@ -1,0 +1,21 @@
+id: lreal_arr_d2_lh
+data: LREAL_ARR_D2_LH.bin
+asserts:
+  - actual: v.v[0].v[0]
+    expected: 0
+  - actual: v.v[0].v[1]
+    expected: 1
+  - actual: v.v[0].v[2]
+    expected: 2
+  - actual: v.v[1].v[0]
+    expected: 4
+  - actual: v.v[1].v[1]
+    expected: 8
+  - actual: v.v[1].v[2]
+    expected: 16
+  - actual: v.v[2].v[0]
+    expected: 32
+  - actual: v.v[2].v[1]
+    expected: 64
+  - actual: v.v[2].v[2]
+    expected: 128

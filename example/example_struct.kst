@@ -1,0 +1,20 @@
+id: example_struct
+data: example_struct.bin
+asserts:
+  - actual: acc.v
+    expected: 5.5
+  - actual: trq.v
+    expected: 11.1
+  - actual: vel.v
+    expected: 3.7
+  - actual: status_code.v
+    expected: 8388623
+
+  - actual: fields.acc
+    expected: 5.5
+  - actual: fields.trq
+    expected: 11.1
+  - actual: fields.vel
+    expected: 3.7
+  - actual: fields.status_code
+    expected: 8388623

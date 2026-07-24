@@ -1,0 +1,7 @@
+id: struct_small_lh
+data: STRUCT_SMALL_LH.bin
+asserts:
+  - actual: v.s.v
+    expected: '"a"'
+  - actual: v.u.v
+    expected: 1

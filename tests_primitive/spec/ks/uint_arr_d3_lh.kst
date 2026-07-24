@@ -1,0 +1,5 @@
+id: uint_arr_d3_lh
+data: UINT_ARR_D3_E1_LH.bin
+asserts:
+  - actual: v.v[0].v[0].v[0]
+    expected: 1

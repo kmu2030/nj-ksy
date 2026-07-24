@@ -1,0 +1,19 @@
+id: struct_alignment4
+data: STRUCT_ALIGNMENT4.bin
+asserts:
+  - actual: v.a_udint.v
+    expected: 1
+  - actual: v.a_dint.v
+    expected: -2
+  - actual: v.uints.v[0]
+    expected: 3
+  - actual: v.uints.v[1]
+    expected: 4
+  - actual: v.bytes.v[0]
+    expected: 5
+  - actual: v.bytes.v[1]
+    expected: 6
+  - actual: v.bytes.v[2]
+    expected: 7
+  - actual: v.bytes.v[3]
+    expected: 8

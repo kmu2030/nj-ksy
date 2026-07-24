@@ -1,0 +1,5 @@
+id: time_arr_d1_e1_lh
+data: TIME_ARR_D1_E1_LH.bin
+asserts:
+  - actual: v.v[0]
+    expected: 100

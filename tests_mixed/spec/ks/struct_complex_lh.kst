@@ -1,0 +1,53 @@
+id: struct_complex_lh
+data: STRUCT_COMPLEX_LH.bin
+asserts:
+  - actual: v.a_usint.v
+    expected: 128
+  - actual: v.alignment2_structs.v[0].a_bool.v
+    expected: true
+  - actual: v.alignment2_structs.v[0].a_int.v
+    expected: 1
+  - actual: v.alignment2_structs.v[0].a_uint.v
+    expected: 2
+  - actual: v.alignment2_structs.v[0].bools.v[0]
+    expected: true
+  - actual: v.alignment2_structs.v[0].bools.v[1]
+    expected: false
+  - actual: v.alignment2_structs.v[0].bools.v[2]
+    expected: true
+  - actual: v.alignment2_structs.v[0].bools.v[3]
+    expected: false
+  - actual: v.alignment2_structs.v[1].a_bool.v
+    expected: false
+  - actual: v.alignment2_structs.v[1].a_int.v
+    expected: 3
+  - actual: v.alignment2_structs.v[1].a_uint.v
+    expected: 4
+  - actual: v.alignment2_structs.v[1].bools.v[0]
+    expected: false
+  - actual: v.alignment2_structs.v[1].bools.v[1]
+    expected: true
+  - actual: v.alignment2_structs.v[1].bools.v[2]
+    expected: false
+  - actual: v.alignment2_structs.v[1].bools.v[3]
+    expected: true
+  - actual: v.a_alignment4_union.bytes.v[0]
+    expected: 5
+  - actual: v.a_alignment4_union.bytes.v[1]
+    expected: 0
+  - actual: v.a_alignment4_union.bytes.v[2]
+    expected: 0
+  - actual: v.a_alignment4_union.bytes.v[3]
+    expected: 0
+  - actual: v.a_alignment4_union.dwords.v[0]
+    expected: 5
+  - actual: v.a_alignment4_union.dwords.v[1]
+    expected: 6
+  - actual: v.a_bool.v
+    expected: true
+  - actual: v.lints.v[0]
+    expected: -7
+  - actual: v.lints.v[1]
+    expected: 8
+  - actual: v.a_enum.v
+    expected: 1

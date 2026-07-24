@@ -1,0 +1,21 @@
+id: time_arr_d2_lh
+data: TIME_ARR_D2_LH.bin
+asserts:
+  - actual: v.v[0].v[0]
+    expected: 0
+  - actual: v.v[0].v[1]
+    expected: 100
+  - actual: v.v[0].v[2]
+    expected: 9223372036854775800
+  - actual: v.v[1].v[0]
+    expected: 1000
+  - actual: v.v[1].v[1]
+    expected: 1000000
+  - actual: v.v[1].v[2]
+    expected: 60000000000
+  - actual: v.v[2].v[0]
+    expected: 3600000000000
+  - actual: v.v[2].v[1]
+    expected: 86400000000000
+  - actual: v.v[2].v[2]
+    expected: -100

@@ -1,0 +1,57 @@
+id: date_and_time_arr_d3_lh
+data: DT_ARR_D3_LH.bin
+asserts:
+  - actual: v.v[0].v[0].v[0]
+    expected: 0
+  - actual: v.v[0].v[0].v[1]
+    expected: 100
+  - actual: v.v[0].v[0].v[2]
+    expected: 1000
+  - actual: v.v[0].v[1].v[0]
+    expected: 1000000
+  - actual: v.v[0].v[1].v[1]
+    expected: 1000000000
+  - actual: v.v[0].v[1].v[2]
+    expected: 10000000000
+  - actual: v.v[0].v[2].v[0]
+    expected: 60000000000
+  - actual: v.v[0].v[2].v[1]
+    expected: 600000000000
+  - actual: v.v[0].v[2].v[2]
+    expected: 3600000000000
+  - actual: v.v[1].v[0].v[0]
+    expected: 36000000000000
+  - actual: v.v[1].v[0].v[1]
+    expected: 86400000000000
+  - actual: v.v[1].v[0].v[2]
+    expected: 777600000000000
+  - actual: v.v[1].v[1].v[0]
+    expected: 2678400000000000
+  - actual: v.v[1].v[1].v[1]
+    expected: 23587200000000000
+  - actual: v.v[1].v[1].v[2]
+    expected: 31536000000000000
+  - actual: v.v[1].v[2].v[0]
+    expected: 315532800000000000
+  - actual: v.v[1].v[2].v[1]
+    expected: 3155760000000000000
+  - actual: v.v[1].v[2].v[2]
+    expected: 999999900
+  - actual: v.v[2].v[0].v[0]
+    expected: 9999999900
+  - actual: v.v[2].v[0].v[1]
+    expected: 59999999900
+  - actual: v.v[2].v[0].v[2]
+    expected: 599999999900
+  - actual: v.v[2].v[1].v[0]
+    expected: 3599999999900
+  - actual: v.v[2].v[1].v[1]
+    expected: 35999999999900
+  - actual: v.v[2].v[1].v[2]
+    expected: 86399999999900
+  - actual: v.v[2].v[2].v[0]
+    expected: 777599999999900
+  - actual: v.v[2].v[2].v[1]
+    expected: 2678399999999900
+  - actual: v.v[2].v[2].v[2]
+    expected: 23587199999999900

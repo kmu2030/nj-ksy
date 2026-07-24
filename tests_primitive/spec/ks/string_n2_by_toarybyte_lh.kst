@@ -1,0 +1,5 @@
+id: string_n2_by_toarybyte_lh
+data: STRING_N2_BY_TOARYBYTE_LH.bin
+asserts:
+  - actual: v.v
+    expected: '"a"'

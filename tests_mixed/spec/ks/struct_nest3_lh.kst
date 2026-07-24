@@ -1,0 +1,21 @@
+id: struct_nest3_lh
+data: STRUCT_NEST3_LH.bin
+asserts:
+  - actual: v.a_small_struct.u.v
+    expected: 5
+  - actual: v.a_small_struct.s.v
+    expected: '"L3"'
+  - actual: v.a_nest2_struct.a_small_struct.u.v
+    expected: 3
+  - actual: v.a_nest2_struct.a_small_struct.s.v
+    expected: '"L2"'
+  - actual: v.a_nest2_struct.a_nest1_struct.a_small_struct.u.v
+    expected: 1
+  - actual: v.a_nest2_struct.a_nest1_struct.a_small_struct.s.v
+    expected: '"L1"'
+  - actual: v.a_nest2_struct.a_nest1_struct.a_int.v
+    expected: -2
+  - actual: v.a_nest2_struct.a_dint.v
+    expected: -4
+  - actual: v.a_lint.v
+    expected: -6

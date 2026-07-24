@@ -1,0 +1,5 @@
+id: string_2byte_char_by_toarybyte_lh
+data: STRING_2BYTE_CHAR_BY_TOARYBYTE_LH.bin
+asserts:
+  - actual: v.v
+    expected: '"Σ-δ"'

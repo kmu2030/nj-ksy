@@ -1,0 +1,9 @@
+id: time_of_day_arr_d1_lh
+data: TOD_ARR_D1_LH.bin
+asserts:
+  - actual: v.v[0]
+    expected: 0
+  - actual: v.v[1]
+    expected: 100
+  - actual: v.v[2]
+    expected: 86399999999900

@@ -1,0 +1,86 @@
+id: example_union
+data: example_union.bin
+asserts:
+  - actual: status_flags.v[0]
+    expected: false
+  - actual: status_flags.v[1]
+    expected: false
+  - actual: status_flags.v[2]
+    expected: false
+  - actual: status_flags.v[3]
+    expected: false
+  - actual: status_flags.v[4]
+    expected: true
+  - actual: status_flags.v[5]
+    expected: false
+  - actual: status_flags.v[6]
+    expected: false
+  - actual: status_flags.v[7]
+    expected: false
+  - actual: status_flags.v[8]
+    expected: false
+  - actual: status_flags.v[9]
+    expected: false
+  - actual: status_flags.v[10]
+    expected: false
+  - actual: status_flags.v[11]
+    expected: false
+  - actual: status_flags.v[12]
+    expected: false
+  - actual: status_flags.v[13]
+    expected: true
+  - actual: status_flags.v[14]
+    expected: false
+  - actual: status_flags.v[15]
+    expected: false
+  - actual: segmented_status_codes.v[0]
+    # 00100000_00010000
+    expected: 8208
+  - actual: segmented_status_codes.v[1]
+    # 10000000_01000000
+    expected: 32832
+  - actual: status_code.v
+    # 10000000_01000000_00100000_00010000
+    expected: 2151686160
+
+  - actual: fields.status_flags[0]
+    expected: false
+  - actual: fields.status_flags[1]
+    expected: false
+  - actual: fields.status_flags[2]
+    expected: false
+  - actual: fields.status_flags[3]
+    expected: false
+  - actual: fields.status_flags[4]
+    expected: true
+  - actual: fields.status_flags[5]
+    expected: false
+  - actual: fields.status_flags[6]
+    expected: false
+  - actual: fields.status_flags[7]
+    expected: false
+  - actual: fields.status_flags[8]
+    expected: false
+  - actual: fields.status_flags[9]
+    expected: false
+  - actual: fields.status_flags[10]
+    expected: false
+  - actual: fields.status_flags[11]
+    expected: false
+  - actual: fields.status_flags[12]
+    expected: false
+  - actual: fields.status_flags[13]
+    expected: true
+  - actual: fields.status_flags[14]
+    expected: false
+  - actual: fields.status_flags[15]
+    expected: false
+  - actual: fields.segmented_status_codes[0]
+    # 00100000_00010000
+    expected: 8208
+  - actual: fields.segmented_status_codes[1]
+    # 10000000_01000000
+    expected: 32832
+  - actual: fields.status_code
+    # 10000000_01000000_00100000_00010000
+    expected: 2151686160

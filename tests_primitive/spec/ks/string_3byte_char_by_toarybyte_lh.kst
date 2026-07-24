@@ -1,0 +1,5 @@
+id: string_3byte_char_by_toarybyte_lh
+data: STRING_3BYTE_CHAR_BY_TOARYBYTE_LH.bin
+asserts:
+  - actual: v.v
+    expected: '"ＪＰ"'

@@ -1,0 +1,5 @@
+id: string_n16_by_toarybyte_lh
+data: STRING_N16_BY_TOARYBYTE_LH.bin
+asserts:
+  - actual: v.v
+    expected: '"abc"'
