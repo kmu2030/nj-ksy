@@ -106,7 +106,7 @@ The correspondence between Sysmac Studio primitive types and NJ ksy type definit
 
 `*_array_*`, which targets arrays of primitive types, is defined as follows, with the number of elements specified.
 
-| Definition in Sysmac Studio | NJ ksy Type |
+| Definition in Sysmac Studio | NJ ksy Definition |
 |-|-|
 | ARRAY [0..2] OF UINT | nj::uint_array_1d(3) |
 | ARRAY [0..2,0..1] OF UINT | nj::uint_array_2d(3,2) |

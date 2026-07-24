@@ -4,7 +4,7 @@
 
 meta:
   id: nj
-  title: NJ Memory Layout Definition Framework
+  title: NJ ksy
   application:
     - Sysmac Studio
   license: GPL-3.0-or-later
@@ -14,7 +14,7 @@ meta:
   bit-endian: le
 
 doc: |
-  Set of definitions representing NJ layout data types in Sysmac Studio.
+  NJ ksy is definition set that statically represents arbitrary types defined in Sysmac Studio while hiding the memory layout rules.
 
   [ Struct Definition ]
 

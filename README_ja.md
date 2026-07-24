@@ -104,7 +104,7 @@ Sysmac Studioの基本型とNJ ksyの定義の対応は以下です。
 
 基本型の配列を対象とする`*_array_*`は、以下のように定義し、要素数を指定します。
 
-| Definition in Sysmac Studio | NJ ksy Type |
+| Definition in Sysmac Studio | NJ ksy Definition |
 |-|-|
 | ARRAY [0..2] OF UINT | nj::uint_array_1d(3) |
 | ARRAY [0..2,0..1] OF UINT | nj::uint_array_2d(3,2) |
