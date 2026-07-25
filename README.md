@@ -95,7 +95,7 @@ The correspondence between Sysmac Studio primitive types and NJ ksy type definit
 | WORD          |         2 | nj::word, nj::word_array_*                   | u2                                 |
 | DWORD         |         4 | nj::dword, nj::dword_array_*                 | u4                                 |
 | LWORD         |         8 | nj::lword, nj::lword_array_*                 | u8                                 |
-| REAL          |         8 | nj::real, nj::real_array_*                   | f4                                 |
+| REAL          |         4 | nj::real, nj::real_array_*                   | f4                                 |
 | LREAL         |         8 | nj::lreal, nj::lreal_array_*                 | f8                                 |
 | STRING        |         1 | nj::string                                   | str (encoding=UTF-8, terminator=0) |
 | TIME          |         8 | nj::time, nj::time_array_*                   | s8  (nanosecond scale)             |
