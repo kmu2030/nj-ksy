@@ -1,0 +1,39 @@
+id: fixed_align
+data: LWORD_ARR_D3_LH.bin
+asserts:
+  - actual: align2_p0.size
+    expected: 0
+  - actual: align2_p1.size
+    expected: 1
+  - actual: align2_p2.size
+    expected: 0
+
+  - actual: align4_p0.size
+    expected: 0
+  - actual: align4_p1.size
+    expected: 3
+  - actual: align4_p2.size
+    expected: 2
+  - actual: align4_p3.size
+    expected: 1
+  - actual: align4_p4.size
+    expected: 0
+
+  - actual: align8_p0.size
+    expected: 0
+  - actual: align8_p1.size
+    expected: 7
+  - actual: align8_p2.size
+    expected: 6
+  - actual: align8_p3.size
+    expected: 5
+  - actual: align8_p4.size
+    expected: 4
+  - actual: align8_p5.size
+    expected: 3
+  - actual: align8_p6.size
+    expected: 2
+  - actual: align8_p7.size
+    expected: 1
+  - actual: align8_p8.size
+    expected: 0

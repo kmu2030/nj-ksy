@@ -155,31 +155,40 @@ types:
   # Define util types.
 
   align2:
+    params:
+      - id: pos
+        type: u4
     seq:
       - id: pad
         type: u1
         repeat: expr
-        repeat-expr: (2 - (_io.pos % 2)) % 2
+        repeat-expr: (2 - (pos % 2)) % 2
     instances:
       size:
         value: pad.size
 
   align4:
+    params:
+      - id: pos
+        type: u4
     seq:
       - id: pad
         type: u1
         repeat: expr
-        repeat-expr: (4 - (_io.pos % 4)) % 4
+        repeat-expr: (4 - (pos % 4)) % 4
     instances:
       size:
         value: pad.size
 
   align8:
+    params:
+      - id: pos
+        type: u4
     seq:
       - id: pad
         type: u1
         repeat: expr
-        repeat-expr: (8 - (_io.pos % 8)) % 8
+        repeat-expr: (8 - (pos % 8)) % 8
     instances:
       size:
         value: pad.size
@@ -189,10 +198,12 @@ types:
       - id: n
         type: u1
     seq:
+      - id: pos
+        type: pos_capturer(_io.pos)
       - id: pad
         type: u1
         repeat: expr
-        repeat-expr: (n - (_io.pos % n)) % n
+        repeat-expr: (n - (pos.value % n)) % n
     instances:
       size:
         value: pad.size
@@ -209,7 +220,7 @@ types:
       - id: pad
         type: u1
         repeat: expr
-        repeat-expr: (alignment - (_io.pos % alignment)) % alignment
+        repeat-expr: (alignment - (head.value % alignment)) % alignment
     instances:
       padding:
         value: pad.size
@@ -224,7 +235,7 @@ types:
       - id: pad
         type: u1
         repeat: expr
-        repeat-expr: (s.alignment - (_io.pos % s.alignment)) % s.alignment
+        repeat-expr: (s.alignment - (head.value % s.alignment)) % s.alignment
     instances:
       alignment:
         value: s.alignment
@@ -672,7 +683,7 @@ types:
   uint:
     seq:
       - id: p
-        type: align2
+        type: align2(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -693,7 +704,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align2
+        type: align2(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -766,7 +777,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align2
+        type: align2(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -795,7 +806,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align2
+        type: align2(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -826,7 +837,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align2
+        type: align2(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -851,7 +862,7 @@ types:
   udint:
     seq:
       - id: p
-        type: align4
+        type: align4(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -872,7 +883,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align4
+        type: align4(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -945,7 +956,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align4
+        type: align4(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -974,7 +985,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align4
+        type: align4(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -1005,7 +1016,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align4
+        type: align4(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -1030,7 +1041,7 @@ types:
   ulint:
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -1051,7 +1062,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -1124,7 +1135,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -1153,7 +1164,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -1184,7 +1195,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -1378,7 +1389,7 @@ types:
   int:
     seq:
       - id: p
-        type: align2
+        type: align2(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -1399,7 +1410,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align2
+        type: align2(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -1472,7 +1483,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align2
+        type: align2(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -1501,7 +1512,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align2
+        type: align2(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -1532,7 +1543,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align2
+        type: align2(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -1557,7 +1568,7 @@ types:
   dint:
     seq:
       - id: p
-        type: align4
+        type: align4(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -1578,7 +1589,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align4
+        type: align4(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -1651,7 +1662,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align4
+        type: align4(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -1680,7 +1691,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align4
+        type: align4(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -1711,7 +1722,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align4
+        type: align4(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -1736,7 +1747,7 @@ types:
   lint:
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -1757,7 +1768,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -1830,7 +1841,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -1859,7 +1870,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -1890,7 +1901,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -1915,7 +1926,7 @@ types:
   real:
     seq:
       - id: p
-        type: align4
+        type: align4(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -1936,7 +1947,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align4
+        type: align4(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -2009,7 +2020,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align4
+        type: align4(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -2038,7 +2049,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align4
+        type: align4(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -2069,7 +2080,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align4
+        type: align4(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -2094,7 +2105,7 @@ types:
   lreal:
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -2115,7 +2126,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -2188,7 +2199,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -2217,7 +2228,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -2248,7 +2259,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -2390,7 +2401,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align2
+        type: align2(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -2527,7 +2538,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align2
+        type: align2(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -2730,7 +2741,7 @@ types:
   word:
     seq:
       - id: p
-        type: align2
+        type: align2(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -2751,7 +2762,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align2
+        type: align2(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -2824,7 +2835,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align2
+        type: align2(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -2853,7 +2864,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align2
+        type: align2(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -2884,7 +2895,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align2
+        type: align2(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -2909,7 +2920,7 @@ types:
   dword:
     seq:
       - id: p
-        type: align4
+        type: align4(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -2930,7 +2941,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align4
+        type: align4(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3003,7 +3014,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align4
+        type: align4(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3032,7 +3043,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align4
+        type: align4(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3063,7 +3074,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align4
+        type: align4(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3088,7 +3099,7 @@ types:
   lword:
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3109,7 +3120,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3182,7 +3193,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3211,7 +3222,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3242,7 +3253,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3305,7 +3316,7 @@ types:
   time_of_day:
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3330,7 +3341,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3404,7 +3415,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3434,7 +3445,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3466,7 +3477,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3540,7 +3551,7 @@ types:
   time:
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3562,7 +3573,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3636,7 +3647,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3666,7 +3677,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3698,7 +3709,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3724,7 +3735,7 @@ types:
   date:
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3745,7 +3756,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3818,7 +3829,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3847,7 +3858,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3878,7 +3889,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3903,7 +3914,7 @@ types:
   date_and_time:
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3924,7 +3935,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -3997,7 +4008,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -4026,7 +4037,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -4057,7 +4068,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align8
+        type: align8(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -4084,7 +4095,7 @@ types:
   enum_t:
     seq:
       - id: p
-        type: align4
+        type: align4(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -4105,7 +4116,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align4
+        type: align4(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -4178,7 +4189,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align4
+        type: align4(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -4207,7 +4218,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align4
+        type: align4(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
@@ -4238,7 +4249,7 @@ types:
         type: u2
     seq:
       - id: p
-        type: align4
+        type: align4(_io.pos)
       - id: h
         type: pos_capturer(_io.pos)
       - id: v
