@@ -221,7 +221,7 @@ seq:
 ```
 uintArrayObj.array_1d.v[x]
 uintArrayObj.array_2d.v[y * 3 + x]
-uintArrayObj.array_3d.v[z * 3 + y * 3 + x] 
+uintArrayObj.array_3d.v[z * 3 * 3 + y * 3 + x] 
 ```
 
 #### 単一基本型の繰り返しによる配列
@@ -259,7 +259,7 @@ seq:
 ```
 uintArrayObj.array_1d.v[x].v
 uintArrayObj.array_2d.v[y * 3 + x].v
-uintArrayObj.array_3d.v[z * 3 + y * 3 + x].v 
+uintArrayObj.array_3d.v[z * 3 * 3 + y * 3 + x].v 
 ```
 
 #### 構造体

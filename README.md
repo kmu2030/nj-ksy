@@ -224,7 +224,7 @@ Value referencing in the generated parser is the same as for a non-flat one-dime
 ```
 uintArrayObj.array_1d.v[x]
 uintArrayObj.array_2d.v[y * 3 + x]
-uintArrayObj.array_3d.v[z * 3 + y * 3 + x] 
+uintArrayObj.array_3d.v[z * 3 * 3 + y * 3 + x] 
 ```
 
 #### Arrays as Repetitions of a Single Primitive Type
@@ -262,7 +262,7 @@ Since the value reference in the generated parser is an array of a single primit
 ```
 uintArrayObj.array_1d.v[x].v
 uintArrayObj.array_2d.v[y * 3 + x].v
-uintArrayObj.array_3d.v[z * 3 + y * 3 + x].v 
+uintArrayObj.array_3d.v[z * 3 * 3 + y * 3 + x].v 
 ```
 
 #### Struct
